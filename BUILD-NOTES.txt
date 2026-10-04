@@ -1,0 +1,14 @@
+Mina Maintenance Windows 7.0.1
+
+المشكلة الأساسية التي تم علاجها:
+- المشروع يحتاج GitHub Actions لكي يبني EXE على GitHub.
+- لا يوجد اعتماد على npm ci؛ لأن المشروع قد لا يحتوي package-lock.json.
+- تم تضمين assets داخل Electron package.
+- تم إصلاح مسار صورة الشعار داخل app/index.html.
+- تم تثبيت Windows target على x64.
+
+GitHub Actions:
+.github/workflows/build-windows.yml
+
+Local build:
+build-windows.bat
